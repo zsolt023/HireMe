@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/prof_exp_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ticketing &amp; Experience Kft-nél szerzett ismeretek" />
+
+    <ImageView
+        android:id="@+id/prof_exp_expand"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_keyboard_arrow_down_black_48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/prof_exp_title"
+        app:layout_constraintEnd_toEndOf="@+id/prof_exp_title"
+        app:layout_constraintTop_toTopOf="@+id/prof_exp_title" />
+
+    <TextView
+        android:id="@+id/prof_exp_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/prof_exp_title" />
+
+</android.support.constraint.ConstraintLayout>
