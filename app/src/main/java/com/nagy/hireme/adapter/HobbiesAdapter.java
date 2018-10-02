@@ -66,7 +66,7 @@ public class HobbiesAdapter extends BaseAdapter {
                 holder.tvText.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/zsolt023/HireMe"));
                         context.startActivity(browserIntent);
                     }
                 });

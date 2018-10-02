@@ -33,7 +33,7 @@ public class ProfessionalKnowledgeFragment extends Fragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         builder.setTitle("Info")
                 .setMessage("A nyelvek mellett található számok 1-5-ös skálán jelölik, hogy " +
-                        "véleményem szerint milyen szintű az adott nyelvismeretem. (1-rossz, 5-kiváló")
+                        "véleményem szerint milyen szintű az adott téren az ismeretem. (1-rossz, 5-kiváló)")
                 .setPositiveButton("Ok", null)
                 .show();
     }

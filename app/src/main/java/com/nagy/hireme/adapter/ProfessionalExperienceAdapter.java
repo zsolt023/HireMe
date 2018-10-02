@@ -68,7 +68,6 @@ public class ProfessionalExperienceAdapter extends BaseAdapter {
                 @Override
                 public void onClick(View v) {
                     if(data.isExpanded()) {
-                        // TODO: összerakni
                         holder.ivExpand.setImageResource(R.drawable.ic_keyboard_arrow_down_black_48dp);
                         holder.tvText.setVisibility(View.GONE);
                     } else {

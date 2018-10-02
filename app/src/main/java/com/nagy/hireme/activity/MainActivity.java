@@ -77,9 +77,6 @@ public class MainActivity extends AppCompatActivity
             case 5:
                 onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_professional_knowledge));
                 break;
-            case 6:
-                onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_references));
-                break;
             case 7:
                 onNavigationItemSelected(navigationView.getMenu().findItem(R.id.nav_hobbies));
                 break;
@@ -122,10 +119,6 @@ public class MainActivity extends AppCompatActivity
                 SPUtil.putInt(SPConstants.SELECTED_MENU_ITEM, 5);
                 fragment = ProfessionalKnowledgeFragment.newInstance();
                 break;
-            case R.id.nav_references:
-                SPUtil.putInt(SPConstants.SELECTED_MENU_ITEM, 6);
-                fragment = ReferencesFragment.newInstance();
-                break;
             case R.id.nav_hobbies:
                 SPUtil.putInt(SPConstants.SELECTED_MENU_ITEM, 7);
                 fragment = HobbiesFragment.newInstance();
@@ -135,8 +128,7 @@ public class MainActivity extends AppCompatActivity
                 fragment = PersonalInfoFragment.newInstance();
                 break;
         }
-        manager.beginTransaction()//.setCustomAnimations(R.anim.slide_down_from_top, R.anim.slide_up_from_top)
-                .replace(R.id.main_fragment, fragment).commit();
+        manager.beginTransaction().replace(R.id.main_fragment, fragment).commit();
 
         drawer.closeDrawer(GravityCompat.START);
         return true;

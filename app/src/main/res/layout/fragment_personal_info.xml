@@ -20,35 +20,35 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="16sp"
-            android:text="Teljes név:" />
+            android:text="@string/personal_info_name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="16sp"
-            android:text="Email:" />
+            android:text="@string/personal_info_email" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="16sp"
-            android:text="Telefonszám:" />
+            android:text="@string/personal_info_phone" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="16sp"
-            android:text="Állampolgárság:" />
+            android:text="@string/personal_info_nationality" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="16sp"
-            android:text="Születési adatok:" />
+            android:text="@string/personal_info_born" />
 
     </LinearLayout>
 
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:layout_marginTop="8dp"
-            android:text="magyar" />
+            android:text="@string/personal_info_hungarian" />
 
         <TextView
             android:layout_width="wrap_content"

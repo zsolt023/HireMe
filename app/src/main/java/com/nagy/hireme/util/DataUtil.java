@@ -2,6 +2,7 @@ package com.nagy.hireme.util;
 
 import com.nagy.hireme.R;
 import com.nagy.hireme.data.AndroidKnowledge;
+import com.nagy.hireme.data.Education;
 import com.nagy.hireme.data.Hobby;
 import com.nagy.hireme.data.OtherKnowledge;
 import com.nagy.hireme.data.ProfessionalExperience;
@@ -64,13 +65,13 @@ public class DataUtil {
     public static List<ProfessionalExperience> getProfessionalExperiences() {
         List<ProfessionalExperience> result = new ArrayList<>();
         result.add(new ProfessionalExperience(
-                "Ticketing & Experience Kft-nél szerzett ismeretek",
+                "Ticketing & Experience Kft-nél szerzett tapasztalatok",
                 "2017-2018",
-                "Ezen a helyen több androidos alkalmazást is fejleszthettem, a legtöbbjüket már a legelejétől én írtam. Vannak köztük promóciós alkalmazások, REST-en kommunikáló alkalmazások, egy GPS-es helymeghatározáson alapuló alkalmazás, olyan alkalmazás, ami képszerkesztéssel, vagy QR kód olvasással, generálással is foglalkozik."));
+                "Ezen a helyen több androidos alkalmazást is fejleszthettem, a legtöbbjüket már a legelejétől én írtam. Vannak köztük promóciós alkalmazások, REST-en kommunikáló alkalmazások, egy GPS-es helymeghatározáson alapuló alkalmazás, olyan alkalmazás, amiben található képszerkesztés, vagy QR kód olvasás, generálás is. Több alkalmazásba is be kellet építeni a firebase-es push notification, vagy a force-update lehetőségét. Egy alkalmazáshoz integráltam a Facebook- és a LinkedIn authentikációt is."));
         result.add(new ProfessionalExperience(
-                "KÓD Informatikánál szerzett ismeretek",
+                "KÓD Informatikánál szerzett tapasztalatok",
                 "2016-2017",
-                "Itt kezdetben kisebb bugfixek-et kellet végeznem. Sokat dolgoztam PostgreSQL-el, GWT-vel, és sima JavaEE-vel. Ottlétem során Android és IOS-es alkalmazások továbbfejlesztését is rám bízták."));
+                "Itt kezdetben már élesben használt alkalmazásokban kisebb bugfixek-et kellet végeznem, illetve később már új feature-ök írását is rám bízták. Sokat dolgoztam PostgreSQL-el, GWT-vel, JIRA-val és JavaEE-vel. Ottlétem során Android-os és IOS-es alkalmazások továbbfejlesztését is végeztem."));
         result.add(new ProfessionalExperience(
                 "Schönherz Iskolaszövetkezet JAVA EE képzését lezáró projektmunka",
                 "2016",
@@ -87,6 +88,14 @@ public class DataUtil {
         result.add(new Hobby("Zenehallgatás", R.drawable.icon_music_listening));
         result.add(new Hobby("Gépezés", R.drawable.icon_computer_playing));
         result.add(new Hobby("Android alkalmazásfejlesztés", R.drawable.icon_programming));
+        return result;
+    }
+
+    public static List<Education> getEducation() {
+        List<Education> result = new ArrayList<>();
+        result.add(new Education("Iskolaszövetkezet", "Schönherz Iskolaszövetkezet", "2016 - 2016"));
+        result.add(new Education("Felsőoktatási intézmény", "BME-Villamosmérnöki és Informatikai Kar", "2014 - 2018"));
+        result.add(new Education("Középiskola", "Veres Péter Gimnázium", "2010-2014"));
         return result;
     }
 }
